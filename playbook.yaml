@@ -62,6 +62,10 @@
       apt:
         name: tomcat10
         state: present
+    - name: install tomcat-admin
+      apt:
+        name: tomcat10-admin
+        state: present
 
     - name: start and enable tomcat
       service:
