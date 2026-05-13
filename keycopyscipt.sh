@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "enter the key name only 'minato'"
+echo "enter the key name only 'minato' then only the script wil works"
 ssh-keygen 
 echo "copy the public key to the server"
 ssh-copy-id -i ./minato.pub ansible@$1
