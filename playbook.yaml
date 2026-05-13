@@ -88,3 +88,8 @@
         name: docker
         state: started
         enabled: yes
+    - name: install maven
+      apt:
+        name: maven
+        state: present
+ 
