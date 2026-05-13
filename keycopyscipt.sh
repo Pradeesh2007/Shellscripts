@@ -8,3 +8,4 @@ ssh-copy-id -i ./minato.pub ansible@$3
 echo "private_key_file = ./minato" >> ansible.cfg
 echo "test the connection"
 ansible all -m ping -u ansible --private-key ./minato
+# git clone https://github.com/Pradeesh2007/shell.git  && chmod +x shell/usercreate.sh  && ./shell/usercreate.sh
