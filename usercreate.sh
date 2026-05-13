@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "creating user ansible"
 
-sudo useradd ansible
+sudo adduser ansible
 sudo passwd ansible
 sudo sh -c 'echo "ansible ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers'   
 sudo sh -c 'echo "PasswordAuthentication yes" > /etc/ssh/sshd_config.d/60-cloudimg-settings.conf' 
