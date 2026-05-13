@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "creating user ansible"
-echo "change no to yes when passwdauthention file apper"
+
 sudo useradd ansible
 sudo passwd ansible
 sudo sh -c 'echo "ansible ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers'   
