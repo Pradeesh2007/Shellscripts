@@ -22,4 +22,4 @@ for host in "$@"; do
 done
 echo ""
 echo "All keys copied successfully."
-# git clone https://github.com/Pradeesh2007/shell.git  && chmod +x shell/keyscript.sh  && ./shell/keyscript.sh
+# git clone https://github.com/Pradeesh2007/Shellscripts.git  && chmod +x Shellscripts/keyscript.sh  && ./Shellscripts/keyscript.sh
