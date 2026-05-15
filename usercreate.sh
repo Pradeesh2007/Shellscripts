@@ -1,9 +1,8 @@
 #!/bin/bash
-echo "creating user ansible"
-
-sudo adduser ansible
-sudo passwd ansible
-sudo sh -c 'echo "ansible ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers'   
+echo "creating user "
+read -p 'Enter the user name' name
+sudo adduser $name
+sudo sh -c 'echo "$name ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers'   
 sudo sh -c 'echo "PasswordAuthentication yes" > /etc/ssh/sshd_config.d/60-cloudimg-settings.conf' 
 echo "Restarting ssh deamon"
 sudo systemctl restart ssh
