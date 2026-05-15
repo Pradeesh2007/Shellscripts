@@ -19,3 +19,31 @@ chmod +x shell/usercreate.sh && \
 > Use only on trusted systems, as the created user gets full root access.
 
 ---
+---
+---
+
+
+# SSH Key Setup Script
+
+Generate an SSH key and copy it to multiple servers.
+
+## Usage
+
+```bash
+git clone https://github.com/Pradeesh2007/Shellscripts.git && \
+chmod +x Shellscripts/keyscript.sh && \
+./Shellscripts/keyscript.sh <host1> <host2> ...
+```
+
+## Example
+
+```bash
+./Shellscripts/keyscript.sh user@server1 user@server2
+```
+
+## Requirements
+
+- git
+- ssh
+- ssh-copy-id
+```
