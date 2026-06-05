@@ -31,7 +31,7 @@ Generate an SSH key and copy it to multiple servers.
 
 ```bash
 git clone https://github.com/Pradeesh2007/Shellscripts.git && \
-chmod +x Shellscripts/keyscript.sh && \
+chmod +x Shellscripts/keycopyscript.sh && \
 ./Shellscripts/keycopyscript.sh <host1> <host2> ...
 ```
 
