@@ -32,13 +32,13 @@ Generate an SSH key and copy it to multiple servers.
 ```bash
 git clone https://github.com/Pradeesh2007/Shellscripts.git && \
 chmod +x Shellscripts/keyscript.sh && \
-./Shellscripts/keyscript.sh <host1> <host2> ...
+./Shellscripts/keycopyscript.sh <host1> <host2> ...
 ```
 
 ## Example
 
 ```bash
-./Shellscripts/keyscript.sh user@server1 user@server2
+./Shellscripts/keycopyscript.sh user@server1 user@server2
 ```
 
 ## Requirements
